@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css?family=Orbitron|PT+Sans+Caption|Poiret+One&display=swap" rel="stylesheet" type='text/css'>
+<link rel="stylesheet" href="css/style.css">
+<title> Начало |  Дедал ООД </title>
+</head>
+<body>
+<header>
+<div class="top-img">
+<nav>
+<ul>
+<a class="logo" href="index.html"><img class="logo-img" src="images/logo.png"></a>
+<div class="nav-button">
+<li><div class="individual-btn"><a href="index.html">Начало</a></div></li>
+<li><div class="individual-btn"><a href="">За нас</a></div></li>
+<li><div class="individual-btn"><a href="">Каталог</a></div></li>
+<li><div class="individual-btn"><a href="">Поръчка</a></div></li>
+<li><div class="individual-btn"><a href="">Промоция</a></div></li>
+<li><div class="individual-btn"><a href="">Галерия</a></div></li>
+<li><div class="individual-btn"><a href="">Свържете се с нас</a></div></li>
+<li><div class="individual-btn"><a href="">Автор на сайта</a></div></li>
+</div>
+</ul>
+</nav> 
+<div class="slider">
+<div class="slider-img fade">
+<img class="slider-img-stl" src="Images/slider-1.jpg">
+</div>
+<div class="slider-img fade">
+<img class="slider-img-stl" src="Images/slider-2.jpg">
+</div>
+<div class="slider-img fade">
+<img class="slider-img-stl" src="Images/slider-3.jpg">
+</div>
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("slider-img");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  slides[slideIndex-1].style.display = "block";
+}
+</script>
+</div>
+</div>
+</header>
+
+<main>
+<div class="hero">
+<h2 class="section-title">Добре дошли в сайта на Дедал ООД!</h2>
+</div>
+<section class="main_content">
+<section class="intro">
+<h2 class="section-title">text!</h2>
+</section>
+<section class="about-us">
+<div class="about-us_intro">
+<h2 class="about-us_title">Кои сме ние?</h2>
+</div>
+<div>
+<p class="about-us_content">ние сме ...</p>
+</div>
+</section>
+<section class="catalogue">
+<header>
+<h2 class="section-title">Каталог</h2>
+</header>
+<div class="button">
+<a href="" class="button"></a>
+</div>
+</section>
+<section class="product-showcase">
+<header>
+<h2 class="section-title">Най-поръчвани продукти:</h2>
+</header>
+<div class="products">
+<div class="product">
+<h3></h3>
+<img src="images/produkt1.jpg" alt="" class="product_img">
+<p></p>
+<p></p>
+</div>
+<div class="product">
+<h3></h3>
+<img src="images/produkt2.jpg" alt="" class="product_img">
+<p></p>
+<p></p>
+</div>
+<div class="product">
+<h3></h3>
+<img src="images/produkt3.jpg" alt="" class="product_img">
+<p></p>
+<p></p>
+</div>
+</div>
+</section>
+<div class="button-group">
+<a href="" class="button-accent">Поръчай сега</a>
+<a href="" class="button-accent">Поръчай сега</a>
+<a href="" class="button-accent">Поръчай сега</a>
+</div>
+</section>
+</main>
+<footer>
+<ul class="footer-nav">
+<li>
+<a href="index.html">Начало</a>
+<a href="">За нас</a>
+<a href="">Каталог</a>
+<a href="">Поръчка</a>
+<a href="">Промоция</a>
+<a href="">Галерия</a>
+<a href="">Свържете се с нас</a>
+<a href="">Автор на сайта</a>
+</li>
+</ul>
+</footer>
+</body>
+</html>
